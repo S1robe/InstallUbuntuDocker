@@ -6,52 +6,25 @@
 ---
 
 <h3><p>
-This guide is designed specifically for an Ubuntu WSL instance.. 
+This guide is designed specifically for an Ubuntu WSL instance.
+
+If you do not have Windows Subsystem for Linux 2 (WSL2) installed, please check out this guide
+
+[Windows Subsystem for Linux Install](https://github.com/S1robe/Virtual-Machine-Guides/blob/main/Windows%2010-11/WSL.md)
 
 ---
-
-> <h2>Preparing for Docker</h2>
-
----
-
-Before we install docker we need to prepare the Ubuntu host for the docker engine and manager. This includes grabbing certificates and other required packages.
-
-Either execute this command, or download the required packages.
-
-- <code>sudo apt-get install ca-certificates curl gnupg lsb-release</code>
-
-1. **ca-cetifications**: for digital certificate management and encryption between thirdparty. (short answer)
-2. **curl**: for downloading anything you can imagine
-3. **gnupg**: for handling gpg keys 
-4. **lsb-release**: for linux standard base information about the system that docker needs to function
-
-
-Next make a place for the gpg keys, if you use other gpg keys you can place these anywhere.
-
-These make a directory, then download the key and then register it with gpg
-
-- <code>sudo mkdir -p /etc/apt/keyrings</code>
-- <code>curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg </code>
-
-This will register the docker repo with 'apt' so that the engine can be downloaded 
-
-- <code>echo "deb [arch=\$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null</code>
-
-Then update apt
-
-- <code> sudo apt-get update </code>
 
 > <h2>Installing Docker</h2>
 
-Now install the required packages from apt
+---
 
-- <code> sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin </code>
+With WSL Microsoft, or docker rather has made it far easier than a manual install of Docker to something like Linux. It optionally requires Windows Subsystem for Linux, however offers better performance this way.
 
-If everything worked well you should be able to run 
+You can download it directly from their website and install it.
 
-- <code>docker run hello-world</code>
+- [Docker Download](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)
 
-Which will cause docker to download and run the "hello-world" container.
 
-At this point if youd prefer a cleaner GUI-interface, install docker desktop from:
+Run this and leave the box for "Run under WSL2 instead of hyper-v checked". unchecking this will have it run on the Hyper-V hypervisor.
 
+After that, everything is complete!
