@@ -6,7 +6,7 @@
 ---
 
 <h3><p>
-This guide is designed specifically for an Ubuntu machine that is already setup for virtualization, kvm support, and up-to-date. 
+This guide is designed specifically for an Ubuntu WSL instance.. 
 
 ---
 
