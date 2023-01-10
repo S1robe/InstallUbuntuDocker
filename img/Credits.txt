@@ -1,0 +1,2 @@
+Images provided in this were found from:
+https://www.liquidweb.com/kb/virtualization-vs-containerization/
