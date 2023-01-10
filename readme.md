@@ -17,7 +17,7 @@ Simply, it is a "virtualized" computer, this can be any combination of hardware 
 
 We typically refer to the virtualized machine as the guest, and the physical machine, host.
 
-- <b>REMEMBER! "Physical" does not always imply that it is physically present.
+- <b>REMEMBER! "Physical" does not always imply that it is physically present.</b>
 - Think "available".
 
 <br>
