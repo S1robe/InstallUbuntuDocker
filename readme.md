@@ -66,7 +66,7 @@ Containers however, are not the same as hypervisors. They are similar as they ar
     - No need to emulate hardware like VM's
 
 - Cons: 
-    - Dont run at bare metal speeds (Theyre virtualized)
+    - Dont run at bare metal speeds (Theyre virtual)
     - Not everything runs well on a container
     - Having a backing storage is tricky.
 
