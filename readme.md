@@ -122,7 +122,7 @@ For example, and editor studio or team of software developers/designers might wa
 
     - Isolate system resources
     - provide encapsulted environment for testing of entire OS's, Applications, networks, ideas etc
-    - Uses Hypervisors
+    - Use Hypervisors
     - Emulates hardware
     - Has a minimum operating requirement
 <h2></h2>
